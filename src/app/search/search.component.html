@@ -1,0 +1,125 @@
+<div class="container">
+
+
+
+    <div class="row">
+
+
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+            <div class="row g-3">
+
+
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 g-3 mt-4">
+
+
+
+                    <label for="" class="form-label">Admission no</label>
+
+
+
+                    <input name="admno" [(ngModel)]="admno" type="text" class="form-control">
+
+
+
+                </div>
+
+
+
+           
+
+
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+
+
+                <button (click)="readValue()" class="btn btn-success">Search</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="row mt-5" *ngFor="let j of readValues">
+
+
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">NAME</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.name}}">
+
+  
+
+           </div>
+
+  
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">Roll no</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.rollno}}">
+
+  
+
+           </div>
+
+  
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">College</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.college}}">
+
+  
+
+           </div>      
+           
+        
+
+
+            
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+
+
+            <button (click)="deleteBtnClick(j.id)" class="btn btn-primary">Delete</button>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    
+
+
+
+</div>
+
+</div>
