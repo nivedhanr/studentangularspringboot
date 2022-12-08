@@ -50,7 +50,7 @@ export class SearchComponent {
   }
   deleteBtnClick=(id:any)=>{
     let data:any={ "id":id}
-    this.api.deleteEmployee(data).subscribe(
+    this.api.deleteStudent(data).subscribe(
       (reponse:any)=>{
         console.log(reponse)
         if (reponse.status=="success") {

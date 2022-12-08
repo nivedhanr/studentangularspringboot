@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
 import { ViewstudentComponent } from './viewstudent/viewstudent.component';
 import { SearchComponent } from './search/search.component';
+import { NavbarComponent } from './navbar/navbar.component';
 const  myroute:Routes=[
   {
     path:"",
@@ -29,7 +30,8 @@ const  myroute:Routes=[
     AppComponent,
     AddstudentComponent,
     ViewstudentComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
