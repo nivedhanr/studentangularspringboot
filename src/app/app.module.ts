@@ -7,16 +7,29 @@ import { AddstudentComponent } from './addstudent/addstudent.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { SearchComponent } from './search/search.component';
 const  myroute:Routes=[
   {
     path:"",
     component:AddstudentComponent
+  },
+  {
+    path:"view",
+    component:ViewstudentComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
+
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AddstudentComponent
+    AddstudentComponent,
+    ViewstudentComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
